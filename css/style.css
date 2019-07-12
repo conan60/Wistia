@@ -1,0 +1,312 @@
+/********************************* General style *********************************/
+
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+*{
+    font-family: "Roboto" , sans-serif;
+    margin : 0;
+    padding : 0;
+}
+body{
+    margin : 0;
+    padding : 0;
+}
+li{
+    list-style: none;
+    margin-right : 15px;
+}
+a{
+    text-decoration: none;
+}
+button{
+    border-radius: 8px;
+    padding : 10px;
+}
+.xl{
+    padding : 20px;
+    width: 240px;
+    font-weight: bold;
+    font-size: 16px;
+}
+.lr{
+    padding : 15px;
+    width: 180px;
+    font-weight: bold;
+    font-size: 16px;
+}
+.white-color{
+    color: white;
+}
+.white-button{
+    color: rgb(54, 57, 69);
+    border: 1px solid rgb(214, 218, 222);
+    background-color: white;
+}
+.transparant-button{
+    color: rgb(54, 57, 69);
+    border: 1px solid rgb(214, 218, 222);
+    background-color: rgba(0, 0, 0, 0);
+}
+.blue-button{
+    color: white;
+    border: 1px solid rgb(62, 169, 245);
+    background-color: rgb(62, 169, 245);
+}
+.gras{
+    font-weight: bold;
+}
+.blue-link{
+    color : #3EA9F5;
+}
+.blue-link:hover{
+    color : #3ED9F5;
+    text-decoration: underline;
+}
+.red-link{
+    color: #FD9786;
+}
+.red-link:hover{
+    color: #db3737;
+    text-decoration: underline;
+}
+
+/********************************* Style Header *********************************/
+
+header{
+    background-color : #CA95A4;
+    padding-bottom : 10px;
+}
+header:hover{
+    background-color : white;
+}
+header:hover nav ul li a{
+    color : black;
+}
+header:hover nav ul li a svg{
+    color: black;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+header nav ul:first-child{
+    margin-left: 20px;
+}
+header nav ul{
+    display: flex;
+    align-items: baseline;
+}
+header nav ul li{
+    font-weight: bold;
+}
+header nav ul li a {
+    color: white;
+}
+header>nav>ul>li>button{
+    width : 120px;
+    font-weight: bold;
+}
+
+/********************************* Style Hero Section *********************************/
+
+#hero{
+    display: flex;
+    justify-content: space-around;
+    background-color : #CA95A4;
+}
+#hero>div{
+    width : 40%;
+}
+#hero>div:first-child{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.hero-text h1 span{
+    color : white;
+}
+.hero-text h1{
+    font-size: 40px;
+    color : #363945;
+    margin: 20px;
+}
+
+/********************************* Style Feature Section *********************************/
+
+#feature{
+    display: flex;
+}
+#feature>div{
+    padding : 40px;
+}
+#feature>div>svg{
+    width : 60px;
+    margin-bottom: 20px;
+}
+#feature>div:nth-child(1)>svg{
+    color: #3EA9F5;
+}
+#feature>div:nth-child(2)>svg{
+    color: rgb(231, 184, 199);
+}
+#feature>div:nth-child(3)>svg{
+    color : rgb(254, 210, 74);
+}
+#feature>div>h2{
+    color:white;
+    margin-bottom : 20px; 
+}
+#feature>div>p{
+    color:#333;
+    font-size: 22px;
+    line-height: 1.5em;
+    margin-bottom: 10px;
+}
+#feature>div>p>a{
+    color: rgb(54, 57, 69);
+    text-decoration: underline;
+}
+#feature>div:nth-child(1){
+    background-color : #fed24a;
+}
+#feature>div:nth-child(2){
+    background-color : #51c29f;
+}
+#feature>div:nth-child(3){
+    background-color : #3ea9f5;
+}
+
+/********************************* Style Partner Section *********************************/
+
+#partner{
+    display: flex;
+    align-items: center;
+    padding : 100px 50px;
+
+}
+#partner>img{
+    margin : 30px;
+    flex-grow: 0;
+    flex-shrink: 1;
+    max-width : 100px;
+}
+#partner>div{
+    flex-grow: 1;
+}
+#partner div>p{
+    color : #9CA8B7;
+    font-size: 15px;
+    font-weight: bold;
+    max-width : 150px;
+    margin-left : 50px;
+}
+
+
+/********************************* Style News Section *********************************/
+
+#news{
+    display: flex;
+    padding : 40px;
+}
+#news>div img{
+    width : 100%;
+}
+.new{
+    padding : 40px;
+}
+.new h3{
+    margin : 10px 0;
+    color: #2A2D35;
+    font-weight: 600;
+    font-size: 110%;
+}
+.new h3 + p{
+    color: #2A2D35;
+    line-height: 28px;
+}
+.new  p:last-child{
+    margin : 20px 0;
+    color: #3769CC;;
+    text-decoration : underline;
+}
+
+
+/********************************* Style Terms Section *********************************/
+
+#terms{
+    display: flex;
+    justify-content: center;
+    background-color : #efefef;
+    padding : 30px;
+    color: #363945;
+    font-size: 1.1em;
+}
+#terms a{
+    color : #5B6B7F;
+    text-decoration : underline;
+}
+
+/********************************* Style Footer *********************************/
+
+footer{
+    background-color: #2a2d35;
+}
+footer .top-footer{
+    display: flex;
+    padding: 100px;
+}
+footer .top-footer>div:nth-child(1){
+    max-width : 360px;
+}
+footer .top-footer>div:nth-child(1) h1{
+    font-weight: 100;
+    margin-bottom: 30px;
+}
+footer .top-footer>div:nth-child(2){
+    display: flex;
+    justify-content: center;
+    padding-left: 50px;
+}
+footer .top-footer>div:nth-child(2) ul{
+    padding-left: 50px;
+}
+footer>div:last-child{
+    display: flex;
+    justify-content: center;
+    padding : 30px;
+}
+footer ul li{
+    margin-bottom : 10px;
+}
+footer ul li a{
+    color : #ddd;
+    font-size: 0.9em;
+}
+footer ul li a:hover{
+    color : #fff;
+}
+.follow-us-footer{
+    line-height: 1.5em;
+}
+.follow-us-footer a{
+    color: #56BE8E;
+}
+.follow-us-footer a:hover{
+    color: #3AB16A;
+    text-decoration: underline;
+}
+footer .gras{
+    color : #9CA8B7;
+}
+.copyright{
+    color : #B2B9C1;
+}
+.copyright a{
+    color : #B2B9C1;
+    text-decoration: underline;
+}
+.copyright a:hover{
+    color : #56BE8E;
+    text-decoration: underline;
+}
