@@ -117,6 +117,7 @@ header>nav>ul>li>button{
 }
 #hero>div{
     width : 40%;
+    overflow: hidden;
 }
 #hero>div:first-child{
     display: flex;
